@@ -54,4 +54,3 @@ char    longest_repetition (char *s, size_t *n)
     *n = max_count;
     return (rep_char);
 }
-aaabbcccc
