@@ -29,8 +29,8 @@ char    longest_repetition (char *s, size_t *n)
 
     while (s[i] != '\0')
     {
-        // set initial counter every time it changes characters
-        if (s[i] == s[i + 1] && s[i + 1])
+		// set initial counter every time it changes characters
+		if (s[i] == s[i + 1] && s[i + 1])
         {
             curr_count = 2;
             curr_char = s[i];
