@@ -22,16 +22,16 @@ And a tower with 6 floors looks like this:
 
 
 void build_tower(unsigned n, char tower[n][2 * n - 1])
-{  
-  for (unsigned x = 0; x < n; x++)
-  {
-    for (unsigned y = 0; y < 2 * n - 1; y++)
-    {
-      tower[x][y] = ' ';
-    }
-    for (unsigned y = n - 1 - x; y <= n - 1 + x; y++)
-    {
-      tower[x][y] = '*';
-    }
-  }
+{
+	for (unsigned x = 0; x < n; x++)
+	{
+		for (unsigned y = 0; y < 2 * n - 1; y++)
+		{
+			tower[x][y] = ' ';
+		}
+		for (unsigned y = n - 1 - x; y <= n - 1 + x; y++)
+		{
+			tower[x][y] = '*';
+		}
+	}
 }

@@ -11,11 +11,11 @@ Write a code that gives out the total amount for different days(d).*/
 /* d - the days to rent */
 unsigned rental_car_cost(unsigned d)
 {
-    unsigned res = 0;
-    res = 40 * d;
-    if (d >= 7)
-        return (res - 50);
-    if (d >= 3)
-        return (res - 20);
-    return res;
+	unsigned res = 0;
+	res = 40 * d;
+	if (d >= 7)
+		return (res - 50);
+	if (d >= 3)
+		return (res - 20);
+	return res;
 }

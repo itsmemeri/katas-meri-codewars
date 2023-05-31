@@ -18,14 +18,13 @@ you should return [10, -65] */
 
 void count_positives_sum_negatives(int *values, size_t count, int *positivesCount, int *negativesSum) 
 {
-    int i = 0;
-    
-    while (i < count)
-    {
-        if (values[i] > 0)
-            *positivesCount = *positivesCount + 1;
-        if (values[i] < 0)
-            *negativesSum = *negativesSum + values[i];
-        i++;
-    }
+	int i = 0;
+	while (i < count)
+	{
+		if (values[i] > 0)
+			*positivesCount = *positivesCount + 1;
+		if (values[i] < 0)
+			*negativesSum = *negativesSum + values[i];
+		i++;
+	}
 }

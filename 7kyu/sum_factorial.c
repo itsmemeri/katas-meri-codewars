@@ -23,31 +23,31 @@ Note: Assume that all values in the list are positive integer values > 0 and eac
 
 unsigned long long factorial_func_recursive(int nb)
 {
-    unsigned long long rec_fact = 1;
-    return ((nb > 0) ? (rec_fact * nb * factorial_func(nb - 1)): rec_fact);
+	unsigned long long rec_fact = 1;
+	return ((nb > 0) ? (rec_fact * nb * factorial_func(nb - 1)): rec_fact);
 }
 
 //ITERATIVE OPTION FOR THE FACTORIAL FUNCTION
 unsigned long long factorial_func_iterative(int i)
 {
-    unsigned long long it_fact = 1;
+	unsigned long long it_fact = 1;
     
-    while (i > 1)
-    {
-        it_fact *= i;
-        i--;
-    }
-    return it_fact;
+	while (i > 1)
+	{
+		it_fact *= i;
+		i--;
+	}
+	return it_fact;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////
 unsigned long long sum_factorial(size_t z, const int array[z]) 
 {
-  unsigned long long  res = 0;
-  for (size_t i = 0; i < z; i++)
-  {
-      res += factorial_func_recursive(array[i]);
-	  //res += factorial_func_iterative(array[i]);
-  }
-  return res;
+	unsigned long long  res = 0;
+	for (size_t i = 0; i < z; i++)
+	{
+		res += factorial_func_recursive(array[i]);
+		//res += factorial_func_iterative(array[i]);
+	}
+	return res;
 }

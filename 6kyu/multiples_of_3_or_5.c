@@ -11,12 +11,12 @@ Note: If the number is a multiple of **both** 3 and 5, only count it *once*.*
 
 int solution(int number) 
 {
-		int i = 0;
+	int i = 0;
     int res = 0;
     
-    if (number < 0)
-        return res;
-    while (i < number)
+	if (number < 0)
+    	return res;
+	while (i < number)
     {
         if (i % 15 == 0 || (i % 3 == 0 || i % 5 == 0))
             res += i;

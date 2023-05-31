@@ -12,16 +12,16 @@ The tests contain some very huge arrays, so think about performance. */
 
 float finduniq(const float *nums, size_t n)
 {
-    unsigned i = 0;
+	unsigned i = 0;
     
-    while (i < n - 1)
-    {
-      if (nums[i] == nums[i + 1])
-          i++;
-      else if (nums[i] != nums[i + 1] && nums[i + 1] == nums[i + 2])
-        return (nums[i]);
-      else
-        return (nums[i + 1]);
+	while (i < n - 1)
+	{
+		if (nums[i] == nums[i + 1])
+        	i++;
+    	else if (nums[i] != nums[i + 1] && nums[i + 1] == nums[i + 2])
+    		return (nums[i]);
+    	else
+    		return (nums[i + 1]);
     }
     return (nums[i]);
 }

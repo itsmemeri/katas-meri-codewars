@@ -24,14 +24,14 @@ void remove_parentheses(const char *str_in, char *str_out)
   
   while(str_in[i])
   {
-    if (str_in[i] == '(') {par++;}
-    if (str_in[i] == ')') {par--;}
-    if (par == 0 && str_in[i] != ')')
-    {
-      str_out[j] = str_in[i];
-      j++;
-    }
-    i++;
-  }
-  str_out[j] = 0;
+	if (str_in[i] == '(') {par++;}
+	if (str_in[i] == ')') {par--;}
+	if (par == 0 && str_in[i] != ')')
+	{
+		str_out[j] = str_in[i];
+    	j++;
+	}
+	i++;
+	}
+	str_out[j] = 0;
 }

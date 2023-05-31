@@ -21,7 +21,7 @@ Happy coding! :)*/
 
 char    longest_repetition (char *s, size_t *n)
 {
-    unsigned int    curr_count = 1;
+	unsigned int    curr_count = 1;
     unsigned int    max_count = 0;
     unsigned int    i = 0;
     char            curr_char = s[i];

@@ -12,22 +12,20 @@ Happy Coding!*/
 //returns the square of n
 unsigned square (unsigned n)
 {
-    return (n * n);
+	return (n * n);
 }
 
 unsigned long long square_digits (unsigned n)
 {
-		//returns 0 if the number given as an input is 0
-    if (n == 0)
-    {    
+	//returns 0 if the number given as an input is 0
+	if (n == 0)    
         return n;
-    }
 		// the if is to differentiate between one-digit or two-digit squares
-    if (square (n % 10) < 10)
-		{
-				// returns de square of the now called units and the recursive function for (n / 10)
-        return (square (n % 10) + (10 * square_digits (n / 10))); 
-		}
-		// returns de square of the now called units and the recursive function for (n / 10) when the square measures two digits
-    return (square (n % 10) + (100 * square_digits (n / 10)));
+	if (square (n % 10) < 10)
+	{
+		// returns de square of the now called units and the recursive function for (n / 10)
+		return (square (n % 10) + (10 * square_digits (n / 10))); 
+	}
+	// returns de square of the now called units and the recursive function for (n / 10) when the square measures two digits
+	return (square (n % 10) + (100 * square_digits (n / 10)));
 }

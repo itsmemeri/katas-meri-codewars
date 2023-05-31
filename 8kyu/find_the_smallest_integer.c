@@ -13,16 +13,15 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 
 int find_smallest_int(const int array[/* len */], size_t len)
 {
-    int res = array[0];
-    size_t i = 0;
-  
-    while (i < len)
-    {
-        if (res > array[i])
-        {
-            res = array[i];
-        }
-        i++;
-    }
-    return res;
+	int res = array[0];
+	size_t i = 0;
+	while (i < len)
+	{
+		if (res > array[i])
+		{
+			res = array[i];
+		}
+		i++;
+	}
+	return res;
 }

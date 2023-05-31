@@ -16,17 +16,17 @@ Test examples:
 
 char *rot13 (char *str_out, const char *str_in)
 {
-  int i = 0;
-  while (str_in[i])
-  {
-    if ((str_in[i] >= 'a' && str_in[i] <= 'm') || (str_in[i] >= 'A' && str_in[i] <= 'M'))
-        str_out[i] = str_in[i] + 13;
-    else if ((str_in[i] >= 'n' && str_in[i] <= 'z') || (str_in[i] >= 'N' && str_in[i] <= 'Z'))
-        str_out[i] = str_in[i] - 13;
-    else
-        str_out[i] = str_in[i];
-    i++;
-  }
-  str_out[i] = '\0';
-  return str_out;
+	int i = 0;
+	while (str_in[i])
+	{
+		if ((str_in[i] >= 'a' && str_in[i] <= 'm') || (str_in[i] >= 'A' && str_in[i] <= 'M'))
+			str_out[i] = str_in[i] + 13;
+		else if ((str_in[i] >= 'n' && str_in[i] <= 'z') || (str_in[i] >= 'N' && str_in[i] <= 'Z'))
+			str_out[i] = str_in[i] - 13;
+		else
+			str_out[i] = str_in[i];
+		i++;
+	}
+	str_out[i] = '\0';
+	return str_out;
 }
